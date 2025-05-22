@@ -25,7 +25,6 @@ namespace WpfAppNeeeeeee
             {
                 ShowError("Введите имя пользователя и пароль.");
                 return;
-                Code error1
             }
 
             try

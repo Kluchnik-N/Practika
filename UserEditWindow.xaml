@@ -1,0 +1,42 @@
+<Window x:Class="WpfAppNeeeeeee.UserEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Пользователь" Height="400" Width="360" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Имя пользователя:" Grid.Row="0"/>
+        <TextBox x:Name="UsernameTextBox" Grid.Row="0" Margin="140,0,0,5" Width="160"/>
+
+        <TextBlock Text="Пароль:" Grid.Row="1"/>
+        <PasswordBox x:Name="PasswordBox" Grid.Row="1" Margin="140,0,0,5" Width="160"/>
+
+        <TextBlock Text="Роль:" Grid.Row="2"/>
+        <ComboBox x:Name="RoleComboBox" Grid.Row="2" Margin="140,0,0,5" Width="160">
+            <ComboBoxItem Content="администратор"/>
+            <ComboBoxItem Content="преподаватель"/>
+        </ComboBox>
+
+        <TextBlock Text="Имя:" Grid.Row="3"/>
+        <TextBox x:Name="NameTextBox" Grid.Row="3" Margin="140,0,0,5" Width="160"/>
+
+        <TextBlock Text="Контакты:" Grid.Row="4"/>
+        <TextBox x:Name="ContactInfoTextBox" Grid.Row="4" Margin="140,0,0,5" Width="160"/>
+
+        <TextBlock Text="Специализация:" Grid.Row="5"/>
+        <TextBox x:Name="SpecializationTextBox" Grid.Row="5" Margin="140,0,0,5" Width="160"/>
+
+        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button x:Name="SaveButton" Content="Сохранить" Width="100" Margin="0,0,10,0" Click="SaveButton_Click"/>
+            <Button x:Name="CancelButton" Content="Отмена" Width="80" Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window> 
